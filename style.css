@@ -39,75 +39,70 @@ a:hover {
 
 header {
     width: 100%;
-    position: relative;
-    padding: 0 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.3, 0.6)), url(../images/ban4.jpg);
-    background-repeat: inherit;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.3, 0.6));
 }
 
 .navbar {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 80px 101px;
+    align-items: center;
+
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar .logo {}
+
+.links li {
+    margin: 0 20px;
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
     color: #d13639;
     font-weight: bold;
+    display: inline;
 }
 
-.navbar .links {
-    display: flex;
-    gap: 2rem;
-    margin: auto;
-}
 
 .toggle-btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    visibility: hidden;
+    display: none;
 
 
-}
-
-.reseaux-sociaux {
-    position: relative;
-    left: 30px;
-}
-
-.reseaux-sociaux a {
-    padding-left: 10px;
-    font-size: 20px;
 
 }
 
-.action-btn {
-    color: #fff;
-    background-color: orangered;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 20px;
-    font-size: 0.8 rem;
-    cursor: pointer;
-    font-weight: bold;
-    outline: none;
+.baniere {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.3, 0.6));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 101px;
+    align-items: center;
+
 }
+
+
+
 
 .presentation {
     text-align: center;
     align-items: center;
     color: #fff;
     margin-top: 20%;
+    text-align: start;
+    position: relative;
+    bottom: 100px;
     font-family: 'poppins', sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -118,16 +113,27 @@ header {
     font-size: 50px;
 }
 
-.presentation h3 {
-    font-weight: 200;
-    font-size: 36px;
+
+.presentation p {
+    font-weight: 100;
+    font-size: 50px;
 }
 
-.action-btn:hover {
-    color: #fff;
-    scale: 1.05;
-    transition: all 1s;
+
+
+.presentation a {
+
+    color: #d13639;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    position: relative;
+    top: 50px;
+
 }
+
 
 /*dropdown*/
 .dropdown {
@@ -192,7 +198,7 @@ header {
 
 
     .toggle-btn {
-        visibility: visible;
+        display: flex;
     }
 
     .reseaux-sociaux {
@@ -237,34 +243,4 @@ header {
     .presentation {
         margin-top: 160px;
     }
-}
-
-
-
-.moi {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.presentation {
-
-    text-align: start;
-    position: relative;
-    bottom: 100px;
-
-}
-
-.presentation a {
-
-    color: #d13639;
-    text-decoration: none;
-    font-weight: 800;
-    text-transform: uppercase;
-    border: 1px solid #fff;
-    padding: 10px 10px;
-    position: relative;
-    top: 50px;
-
 }
