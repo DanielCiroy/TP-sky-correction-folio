@@ -46,7 +46,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 101px;
+    padding: 30px 100px;
     align-items: center;
 
 }
@@ -83,11 +83,12 @@ header {
 
 .baniere {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0.3, 0.6));
+    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
+    background: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 101px;
+    padding: 0 101px;
     align-items: center;
 
 }
@@ -96,11 +97,10 @@ header {
 
 
 .presentation {
-    text-align: center;
+    text-align: start;
     align-items: center;
     color: #fff;
     margin-top: 20%;
-    text-align: start;
     position: relative;
     bottom: 100px;
     font-family: 'poppins', sans-serif;
@@ -242,5 +242,60 @@ header {
 
     .presentation {
         margin-top: 160px;
+    }
+}
+
+/*responsive baniere*/
+
+@media (max-width:1162px) {
+    .presentation h2 {
+        font-size: 40px;
+    }
+
+    .presentation p {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:1195px) {
+
+
+    .presentation p {
+        font-size: 33px;
+    }
+
+}
+
+
+@media (max-width:1125px) {
+    .presentation h2 {
+        font-size: 40px;
+    }
+
+    .presentation p {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .baniere {
+        flex-direction: column;
+    }
+
+    .presentation h2 {
+        font-size: 33px;
+    }
+}
+
+
+
+
+@media (max-width:842px) {
+
+
+    .presentation {
+        text-align: start;
     }
 }
