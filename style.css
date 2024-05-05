@@ -88,7 +88,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 101px;
+    padding: 0 100px;
     align-items: center;
 
 }
@@ -97,6 +97,7 @@ header {
 
 
 .presentation {
+    width: 60%;
     text-align: start;
     align-items: center;
     color: #fff;
@@ -106,6 +107,10 @@ header {
     font-family: 'poppins', sans-serif;
     font-size: 50px;
     font-weight: 700;
+}
+
+.ma-photo {
+    width: 40%;
 }
 
 .presentation h2 {
@@ -189,6 +194,7 @@ header {
 }
 
 
+/*responsive navbar*/
 @media (max-width:992px) {
 
     .navbar .links,
@@ -245,6 +251,7 @@ header {
     }
 }
 
+
 /*responsive baniere*/
 
 @media (max-width:1162px) {
@@ -287,6 +294,14 @@ header {
     .presentation h2 {
         font-size: 33px;
     }
+
+    .presentation {
+        width: 100%;
+    }
+
+    .ma-photo {
+        width: 100%;
+    }
 }
 
 
@@ -298,4 +313,106 @@ header {
     .presentation {
         text-align: start;
     }
+}
+
+.expertise {
+    width: 100%;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
+    background: #fff;
+    padding: 0 100px;
+}
+
+
+.competences {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.competences .skills {
+    width: 50%;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.competences .photo-competences {
+    width: 45%;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.skill-bar {
+    height: 12px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 12px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 2px 1px;
+
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+/*responsive section competences*/
+
+@media (max-width:992px) {
+    .competences {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .competences .photo-competences {
+        width: 100%;
+
+    }
+
+    .competences .skills {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+
+}
+
+
+.projets {
+    width: 100%;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
+    background: #fff;
+    padding: 0 100px;
 }
