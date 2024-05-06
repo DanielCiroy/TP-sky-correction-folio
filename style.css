@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700;1,900&display=swap');
 
 
@@ -10,7 +8,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -83,8 +80,7 @@ header {
 
 .baniere {
     width: 100%;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
-    background: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,6 +109,12 @@ header {
     width: 40%;
 }
 
+
+.ma-photo img {
+    border-radius: 5px;
+}
+
+
 .presentation h2 {
     font-weight: 700;
     font-size: 50px;
@@ -122,7 +124,9 @@ header {
 .presentation p {
     font-weight: 100;
     font-size: 50px;
+    font-family: 'poppins', sans-serif;
 }
+
 
 
 
@@ -140,7 +144,7 @@ header {
 }
 
 
-/*dropdown*/
+
 .dropdown {
     position: absolute;
     background: #ffff;
@@ -212,11 +216,14 @@ header {
     }
 
     .presentation {
-        padding-top: 100px;
+        padding-top: 180px;
     }
 
     .dropdown {
-        width: 92.5%;
+        width: 85.5%;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 30px;
     }
 
 }
@@ -224,6 +231,7 @@ header {
 @media (max-width:768px) {
     .dropdown {
         width: 91%;
+        margin-right: 50px;
     }
 
     .presentation {
@@ -231,9 +239,39 @@ header {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:765px) {
     .dropdown {
         width: 88%;
+        margin-right: 50px;
+    }
+
+    .presentation {
+        margin-top: 160px;
+    }
+}
+
+
+@media (max-width:765px) {
+    .dropdown {
+        width: 85%;
+        margin-right: 50px;
+    }
+
+    .presentation {
+        margin-top: 160px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+    .dropdown {
+        width: 82%;
     }
 
     .presentation {
@@ -317,9 +355,10 @@ header {
 
 .expertise {
     width: 100%;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
-    background: #fff;
+    background: #f7f2f2;
     padding: 0 100px;
+    padding-bottom: 50px;
+
 }
 
 
@@ -341,6 +380,11 @@ header {
 .competences .photo-competences {
     width: 45%;
 }
+
+.photo-competences img {
+    border-radius: 5px;
+}
+
 
 .skill-name {
     font-size: 18px;
@@ -415,13 +459,44 @@ header {
     /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
     background: #fff;
     padding: 0 100px;
+    margin: 50px 0;
 }
 
 
+.projets h5 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
 
+.projets p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
 
+.contact h5 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.contact p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.expertise h5 {
+    font-size: 28px;
+    padding-top: 50px;
+}
+
+
+.expertise p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
 
 .blocs-container {
@@ -465,6 +540,7 @@ header {
     cursor: pointer;
     font-size: 13px;
     text-align: start;
+    border-radius: 3px;
 }
 
 /*responsive blocs projets*/
@@ -493,9 +569,8 @@ header {
 
 .contact {
     width: 100%;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(187, 24, 24, 0.6));*/
-    background: #fff;
-    padding: 0 100px;
+    background: #f7f2f2;
+    padding: 50px 100px;
 }
 
 .section-contact {
@@ -506,11 +581,17 @@ header {
 
 .photo-contact {
     width: 45%;
-    margin-top: 80px;
+    margin-top: 47px;
+
+}
+
+.photo-contact img {
+    border-radius: 5px;
 }
 
 form {
     width: 50%;
+    margin-top: 50px;
 }
 
 form input {
@@ -528,6 +609,14 @@ button {
     height: 35px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #d13639;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 
@@ -559,4 +648,16 @@ form textarea {
     }
 
 
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+}
+
+
+.footer p {
+    margin-top: 30px;
 }
